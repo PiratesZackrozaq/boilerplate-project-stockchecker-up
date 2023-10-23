@@ -1,5 +1,4 @@
 "use strict";
-
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -53,7 +52,7 @@ app.listen(process.env.PORT || 3000, function () {
     console.log("Running Tests...");
     setTimeout(function () {
       try {
-       runner.run();
+        runner.run();
       } catch (e) {
         var error = e;
         console.log("Tests are not valid:");
